@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- <script src="index.js">
+        
+    </script>--> 
+    <script>
+        //yaziyiDegistir() => Parametresiz bir fonksiyondur.
+        function yaziyiDegistir(){
+   //alert("deneme")
+   document.getElementById("changeText").innerHTML="Yazı Değiştirildi"
+   document.getElementById("changeText").style.color="blue"
+   document.getElementById("changeText").style.fontSize="90px"
+        }
+      //topla()=> Parametreli bir fonksiyondur
+
+      function topla(sayi1,sayi2){
+        var toplam=sayi1+sayi2;
+        document.write(sayi1 + "ile" + sayi2 +"sayıların toplamı" + toplam +"etmektedir.")
+
+      }
+    </script>
+</head>
+<body>
+    <div >
+<h1 id="demo">Merhaba JavaScript</h1>
+<button onclick='document.getElementById("demo").innerHTML="Ben JavaScript öğreniyorum!"'>Buraya Tıkla!</button>
+<button onclick='document.getElementById("demo").style.fontSize="60px"'>Font Size değiştir</button>
+<button onclick='document.getElementById("demo").style.color="red"'>Font Rengini değiştir</button>
+
+
+
+
+    </div>
+
+
+    <div>
+        <h1>
+            Resim Göster/Gizle
+        </h1>
+        <button onclick="document.getElementById('resim1').style.display='none'">Resmi Gizle</button>
+        <img src="download.jpeg" id="resim1"/>
+        <button onclick="document.getElementById('resim1').style.display='block'">Resmi Göster</button>
+    </div>
+
+
+    <div>
+        <h1> Fonksiyonlar Kullanılarak Yazıyı Değiştirme</h1>
+        <p id="changeText">Bu bir paragraf</p>
+        <button onclick="yaziyiDegistir()">
+            Yazıyı Değiştir!!!
+        </button>
+        
+    </div>
+    <div>
+        <script>
+            topla(2,5)
+        </script>
+    </div>
+</body>
+</html>
